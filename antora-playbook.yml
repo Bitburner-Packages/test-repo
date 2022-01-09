@@ -1,0 +1,22 @@
+site:
+  title: "BPM - Bitburner Packages Manager"
+  #put url: https://...
+  start_page: component-b::index.adoc
+
+content:
+  sources:
+  - url: https://github.com/Bitburner-Packages/test-repo.git
+    branches: [main, test]
+    #startpath: foldername
+
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true # https://docs.antora.org/antora/latest/playbook/ui-bundle-url/#snapshot
+  supplemental_files:
+  - path: ui.yml
+    contents: |
+      static_files:
+      - .nojekyll
+  - path: .nojekyll
