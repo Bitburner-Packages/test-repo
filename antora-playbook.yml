@@ -1,10 +1,11 @@
 site:
   title: "BPM - Bitburner Packages Manager"
   #put url: https://...
-  start_page: component-b::index.adoc
+  start_page: index.adoc
 
 content:
   sources:
+  - url: https://gitlab.com/antora/demo/demo-component-a.git
   - url: https://github.com/Bitburner-Packages/test-repo.git
     branches: [main, test]
     #startpath: foldername
